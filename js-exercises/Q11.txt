@@ -5,4 +5,10 @@ var str1 = "que bola acere";
 var str2 = "sup dawg";
 var str3 = str1 + "is similar to" + str2 + " in spanish.";
 
-Answer:
+Answer: que bola acereis similar tosup dawg in spanish.
+
+
+var str1 = "que bola acere";
+var str2 = "sup dawg";
+var str3 = str1 + "is similar to" + str2 + " in spanish.";
+console.log(str3);

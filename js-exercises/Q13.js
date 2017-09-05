@@ -24,8 +24,25 @@ Entonces su programa debería mostrar lo siguiente:
 "Al terminar el an~o [n], usted tendra $[monto anterior]*(1+interes)
 "
 */
+/*
+var money = 1000;
+var interest = 0.05;
+var years = 30;
+*/
+
+// Answer:
+
 var money = 1000;
 var interest = 0.05;
 var years = 30;
 
-// Answer:
+var  amount  =  0;
+var compounding = 0;
+var  i = 0;
+
+while(i < 30){
+i = i + 1;
+amount  =  (money * interest);
+console.log(`At the end of year ` + (i) + `,` + ` you have $` + (amount + compounding));
+compounding = compounding + amount;
+}

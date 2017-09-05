@@ -7,4 +7,11 @@ x = x * y;
 var z = 4;
 x = x * z;
 
-Answer:
+Answer: 240
+
+var x = 10;
+var y = 6;
+x = x * y;
+var z = 4;
+x = x * z;
+console.log(x);

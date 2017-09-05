@@ -35,3 +35,11 @@ nav li{
 .card .services-title {
     color: #00f;
 }
+
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+}

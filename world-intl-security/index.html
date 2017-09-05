@@ -6,12 +6,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="./style.css">
+        <!--<script> src="script.js"</script>-->
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <nav class="blue darken-4" role="navigation" id="navbar">
             <div class="nav-wrapper">
               <a href="#" class="brand-logo center"><img src="img/logo.gif" alt="World International Security"></a>
+              <!--Task 1: Print 'clicked on logo' to the console when the user clicks on the logo in the navbar.--> 
+              <!-- <button onclick="location.reload(true);">Clicked on Logo</button>
+              <button onclick="document.write(img/logo.gif)">Clicked on Logo</button> -->
+              <!--end comment-->
               <ul id="nav-desktop" class="left hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="company.html">Company</a></li>
@@ -27,7 +32,7 @@
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
         </nav>
-
+        
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -37,15 +42,15 @@
                       <span class="card-title">A Wide Range of Security Services for You and Your Business</span>
                     </div>
                     <div class="card-content center">
-                      <p>Our agency and security officers are fully licensed by
-                          the State of Florida and carry insurance coverage
-                          that meets or exceeds liability requirements. We
-                          provide physical security of property and person,
-                          loss prevention, confidential investigations and
-                          research of government and employment records.
-                          Whatever the size or scope of your business, we
-                          can conduct a comprehensive security consultation
-                          and survey, and create a program specifically
+                      <p>Our agency and security officers are fully licensed by 
+                          the State of Florida and carry insurance coverage 
+                          that meets or exceeds liability requirements. We 
+                          provide physical security of property and person, 
+                          loss prevention, confidential investigations and 
+                          research of government and employment records. 
+                          Whatever the size or scope of your business, we 
+                          can conduct a comprehensive security consultation 
+                          and survey, and create a program specifically 
                           designed to meet your needs.</p>
                     </div>
                     <div class="card-action center blue-text text-darken-4">
@@ -56,36 +61,60 @@
             </div>
             <div class="row">
                 <div class="col s12 m6">
-                  <div class="card" id="contact-card">
+                  <div class="card fix-height" id="contact-card">
                     <div class="card-image blue darken-4">
                       <img src="img/security-guard-miami-b.png">
+                       <!--Task 2:The div with class 'mission-content' is hidden with CSS. 
+                        Use JavaScript to show/reveal/toggle the div with class 'mission-content' 
+                        when the user clicks on the anchor that says 'Our Mission'. 
+                        Make sure you prevent the default anchor behavior, which moves the page 
+                        to the href attribute's value.--> 
+                     
+
+                     
+                        <span class="card-title">Our Mission</span>
+                       <!--end comment-->
+
+                       <!--<script type="text/javascript">
+                        function a(){
+                            this.classList.toggle('first');
+                            this.classList.toggle('sec');
+                        }
+                        document.querySelector('#card-content').addEventListener('mouseenter', a )
+                        document.querySelector('#card-text').addEventListener('mouseleave', a )
+                    </script><-->
+
                     </div>
-                    <div class="card-content mission-content" id="mission-content">
+
+                    
+                    <div class="card-content" id="card-text">
                         <br>
-                      <p>At World International Security, our goal is to assist our
+                      <p>At World International Security, our goal is to assist our 
                           clients in maintaining a safe and profitable work environment
                           for their employees and patrons</p>
                         <br>
-                      <p>We provide security measures and systems that are private,
-                          dependable, efficient and cost-effective. World International
-                          Security evaluates every decision made to provide the best
-                          security solution unique to your company as well as ensure
+                      <p>We provide security measures and systems that are private, 
+                          dependable, efficient and cost-effective. World International 
+                          Security evaluates every decision made to provide the best 
+                          security solution unique to your company as well as ensure 
                           safety and the minimization of liability.</p>
-
+                        
                     </div>
-                    <a id="mission-btn" href="#">
-                        <div class="card-action center">
-                            <span class=" card-title mission-title">Our Mission &gt;</span>
-                        </div>
-                    </a>
+                    <div class="card-action center" id="contact-div">
+                        <a href="contact.html">Contact Us</a>
+                    </div>
                   </div>
                 </div>
                 <div class="col s12 m6">
-                  <div class="card">
+                  <div class="card fix-height">
                     <div class="card-image">
                       <img src="img/surveillance-company-miami-darken.jpg">
+                      <!--Task 3: Repeat step 2, but for the div with class 'services-content' 
+                        and the 'Our Services' anchor.-->
+                      <span class="card-title">Some Of Our Services</span>
+                      <!--End of Coment--> 
                     </div>
-                    <div class="card-content services-content" id="services-content">
+                    <div class="card-content">
                         <ul class="collection">
                             <li class="collection-item"><i class="material-icons pd1">verified_user</i>Security Officers (armed & Unarmed)</li>
                             <li class="collection-item"><i class="material-icons pd1">verified_user</i>Patrol Vehicles (commercial & residential)</li>
@@ -94,16 +123,61 @@
                             <li class="collection-item"><i class="material-icons pd1">verified_user</i>Records Research</li>
                         </ul>
                     </div>
-                    <a id="services-btn" href="#">
-                        <div class="card-action center">
-                            <span class="card-title services-title">Our Services &gt;</span>
-                        </div>
-                    </a>
+                    <div class="card-action center">
+                        <a href="services.html">All Services</a>
+                    </div>
                   </div>
                 </div>
             </div>
         </div>
 
-        <script>$('.button-collapse').sideNav();</script>
+        <!--Task 4:	Create a form with 3 inputs and a submit button. The inputs should have the following attributes:
+            i.	type should be "text"; name should be "name"
+            ii.	type should be "email"; name should be "email"
+            iii.	type should be "tel"; name should "phone"-->
+
+        <form id="contact-form" action="http://fvi-grad.com:404/email" method="POST" form>
+
+            <input type="text" name="dest_email" value="pnunez@techlaunch.io" hidden>
+
+            <div class="contact-form">
+
+                <label> Full Name></label>
+                <input type="text" name="full_name">
+                
+                <label> Phone></label>
+                <input type="tel" name="phone">
+
+                <label> E-mail></label>
+                <input type="text" name="email">
+
+            </div>
+            
+            <!-- <label>Message</label>
+                <textarea name="message"></textarea> -->
+                <button type="submit">send</button>
+        </form>
+
+    <!--Task 5: Using jQuery's ajax method, post the form data to fvi-grad.com:4004/fakeform. 
+    Make sure you prevent the form's default behavior of reloading the page.-->
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        
+        <!--End of COmment-->
+        
+        <script src="script.js"></script>
+
+        <script>
+            
+            $('.button-collapse').sideNav();
+        </script>
     </body>
 </html>
+
+
+
+<!--Task 6: Change the form button's content (its word) to 'Message Sent!' after the form successfully sends. 
+    If the form fails to send, change the form button's contents to 'Error sending message'.-->
+

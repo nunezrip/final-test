@@ -11,4 +11,10 @@ b: "50thug life"
 c: "thug life510"
 d: "thug life50"
 
-Answer:
+Answer: b
+
+var a = `thug life`;
+var b = 5;
+var c = 10;
+var x = (b * c) + a;
+console.log(x);

@@ -10,6 +10,7 @@ debe comprar un carro nuevo" solamente si la eddad del carro que tiene (carAge)
 es mayor que 10, el millaje (mileage) es mayor que 150,000, y si la marca es Kia.
 De otra manera, su programa debe mostrar "Espere un poco, sea frugal."
 */
+/*
 var carAge = 10;
 var mileage = 150000;
 var brand = "Kia";
@@ -19,3 +20,18 @@ if (  ){
 } else {
   console.log("Hold off a bit, be frugal.");
 }
+*/
+
+var carAge = 10;
+var mileage = 150000;
+var brand = `Kia`;
+
+
+if (carAge > 10 && mileage && 150000 && brand === `Kia`) {
+	console.log(`You should buy a new car`);
+}
+
+	else {
+  		console.log(`Hold off a bit, be frugal.`);
+}
+

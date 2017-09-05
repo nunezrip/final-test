@@ -12,6 +12,7 @@ La contadora le pidio que haga un reporte de cuanto galones gasta por dia, que
 depende en las piscinas operacionales.  Hoy toda las piscinas estan trabajando.
 */
 
+/*
 var totalPools = 12
 var currentPool = 1
 var smallVolume = 1000
@@ -19,5 +20,25 @@ var largeVolume = 3000
 var totalVolume = 0
 for ( ; ; ) {
 
+}
+*/
+
+var totalPools = 12
+var currentPool = 1
+var smallVolume = 1000
+var largeVolume = 3000
+var totalVolume = 0
+
+var smallPools = 7;
+var largePools = 5;
+
+var i = 0;
+
+for (i = 0; i < currentPool; i++) {
+totalPools = (smallPools + largePools);
+totalVolume = (smallPools * smallVolume) + (largePools * largeVolume);
+
+console.log(totalVolume + ` gals. were required to fill ` + totalPools + ` pools today`);
 
 }
+
